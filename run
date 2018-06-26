@@ -1,0 +1,8 @@
+stack build --ghc-options -O2
+
+echo "benchmark replicate 1"
+(/usr/bin/time -f %U stack exec conduit-bench 1 >/dev/null)
+echo "benchmark replicate 2"
+(/usr/bin/time -f %U stack exec conduit-bench 2 >/dev/null)
+echo "benchmark replicate 3"
+(/usr/bin/time -f %U stack exec conduit-bench 3 >/dev/null)
