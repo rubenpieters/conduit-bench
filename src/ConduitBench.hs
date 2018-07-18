@@ -1,8 +1,11 @@
 module ConduitBench where
 
+import Data.Functor.Identity
+
 import Control.Monad
 
 import Conduit
+import Data.Conduit.Combinators hiding (print)
 
 upfrom :: (Monad m) => Int -> ConduitT x Int m b
 upfrom n = do

@@ -15,7 +15,7 @@
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: nightly-2018-06-29
+resolver: lts-12.1
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -38,8 +38,8 @@ resolver: nightly-2018-06-29
 packages:
 - .
 - location:
-    git: https://github.com/rubenpieters/criterion.git
-    commit: 2aa4a486117aa2879fab4fec60ae86d590cbcc1b
+    git: https://github.com/rubenpieters/hs-gauge.git
+    commit: bcb617c4c1daac37a1ef2f3274ef3055531ff508
   extra-dep: true
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
